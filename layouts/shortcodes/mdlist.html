@@ -1,0 +1,3 @@
+<!-- only for list md -->
+{{ $file := .Get "file" | readFile }}
+{{ (print "" $file "\n")  | markdownify }}
